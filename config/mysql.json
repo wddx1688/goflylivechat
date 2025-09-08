@@ -1,7 +1,7 @@
 {
-	"Server":"localhost",
-	"Port":"3306",
-	"Database":"goflychat",
-	"Username":"goflychat",
-	"Password":"goflychat"
+	"Server":"goflylivechat-mailzhangwanli.d.aivencloud.com",
+	"Port":"14847",
+	"Database":"defaultdb",
+	"Username":"avnadmin",
+	"Password":"AVNS_ByrZpacLwqiUoQzehbH"
 }
