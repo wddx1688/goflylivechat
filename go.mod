@@ -2,7 +2,6 @@ module goflylivechat
 
 go 1.21
 
-
 require (
 	github.com/dchest/captcha v0.0.0-20200903113550-03f5f0333e1f
 	github.com/emersion/go-sasl v0.0.0-20200509203442-7bfe0ed36a21
@@ -19,6 +18,7 @@ require (
 	github.com/sirupsen/logrus v1.4.2
 	github.com/spf13/cobra v0.0.5
 	github.com/zh-five/xdaemon v0.1.1
+	golang.org/x/sys v0.20.0 // 添加为直接依赖
 )
 
 require (
@@ -49,6 +49,5 @@ require (
 	github.com/stretchr/testify v1.10.0 // indirect
 	github.com/ugorji/go/codec v1.1.7 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
-	golang.org/x/sys v0.20.0 // indirect
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
