@@ -8,12 +8,13 @@ package tools
 import (
 	"log"
 	"os"
-
+	
 	"golang.org/x/sys/unix"
 )
 
 // redirectStderr to the file passed in
 func RedirectStderr(f *os.File) {
+	// 使用 unix.Dup3 替代已弃用的 syscall.Dup2
 	err := unix.Dup3(int(f.Fd()), int(os.Stderr.Fd()), 0)
 	if err != nil {
 		log.Printf("Failed to redirect stderr to file: %v", err)
